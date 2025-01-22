@@ -1,0 +1,31 @@
+# Ignore virtual environments
+.venv/
+env/
+
+# Ignore NVIDIA easy setup folder
+nvidia_easy_setup/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore model weights (optional, unless shared intentionally)
+*.pt
+*.onnx
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE-specific files
+.idea/
+
+# Ignore temporary files
+*.tmp
+*.log
+*.swp
+*.bak
