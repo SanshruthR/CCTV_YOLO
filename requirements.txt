@@ -1,0 +1,11 @@
+opencv-python-headless
+gradio
+torch
+bettercam
+numpy
+ultralytics
+cupy-cuda11x
+onnx==1.17.0
+onnxruntime-gpu==1.20.1  # NVIDIA GPU support
+onnx-simplifier
+onnxruntime==1.20.1
