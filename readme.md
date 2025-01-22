@@ -23,7 +23,7 @@ This project provides a real-time object detection system using **YOLO (You Only
 ### Dependencies
 Install the required Python packages:
 ```
-pip install ultralytics opencv-python numpy gradio torch bettercam
+pip install ultralytics opencv-python numpy gradio torch bettercam cupy-cuda11x onnx onnxruntime-gpu onnx-simplifier onnxruntime
 ```
 
 ## Configuration
@@ -78,6 +78,9 @@ python main.py
 - YOLOv7
 - YOLOv8
 
+## Exporting Yolo 
+- [Repo: Exporting Yolo](https://github.com/KernFerm/exporting-YOLO)
+
 ## Contributions
 
 Contributions are welcome! If you have ideas for improvement, feel free to submit a pull request or open an issue.
@@ -94,6 +97,8 @@ This project is licensed under the `MIT License`.
 - [BetterCam](https://github.com/RootKit-Org/BetterCam) for efficient video capture.
 
 - [Gradio](https://gradio.app/) for the user-friendly interface.
+
+- Forked from [SanshruthR/CCTV_YOLO](https://github.com/SanshruthR/CCTV_YOLO)
 
 
 ### 1. **Download the NVIDIA CUDA Toolkit 11.8**
@@ -212,11 +217,4 @@ If you're using cuDNN, ensure the `cudnn64_8.dll` is also in your system path:
 set PATH=C:\tools\cuda\bin;%PATH%
 ```
 This should properly set up CUDA 11.8 to be used for your projects via `cmd.exe`.
-
-
-
-
-
-
-
 
