@@ -14,8 +14,15 @@ model.agnostic = False
 model.multi_label = False
 model.max_det = 100  # max number of detections
 
-# Low-resolution for inference
-LOW_RES = (320, 180)
+# Low-resolution for inference 
+#use frame_count += 3
+#LOW_RES = (500, 600) 
+
+#Faster inference but less accurate 
+#LOW_RES = (320, 180) 
+
+#Fastest inference but low accuracy, change frame_count to += 2
+LOW_RES = (300, 300)
 
 def detect_and_draw(frame):
     # Create low-res copy
@@ -49,7 +56,7 @@ def process_stream():
         if not ret:
             break
 
-        frame_count += 3
+        frame_count += 2  #change to 3 for higher res
         if frame_count % 30 == 0:
             result = detect_and_draw(frame)
             result_rgb = cv2.cvtColor(result, cv2.COLOR_BGR2RGB)
